@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template styling</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
                     <img src="images/ham.svg" alt="abrir menu" class="menu" id="menu">
                 </a>
 
-                <ul class="show-desktop hide-desktop">
+                <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="menu de salida"></li>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
@@ -41,15 +41,15 @@
             <ul>
                 <li>
                     <img src="images/icon-1.svg" alt="Calendario">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde expedita fuga corporis nam ut voluptate!</p>
                 </li>
                 <li>
                     <img src="images/icon-2.svg" alt="Calendario">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate quia quidem officiis ipsa quam?</p>
                 </li>
                 <li>
                     <img src="images/icon-3.svg" alt="Calendario">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quae culpa debitis quos voluptate ad?</p>
                 </li>
             </ul>
         </div>
@@ -96,6 +96,21 @@
     </div>
 </footer>
 
+<script>
+
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('nav');
+    const exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+    });
+
+</script>
 
 </body>
 </html>
