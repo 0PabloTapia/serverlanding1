@@ -16,7 +16,7 @@
                     <img src="images/ham.svg" alt="abrir menu" class="menu" id="menu">
                 </a>
 
-                <ul class="show-desktop hide-mobile">
+                <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="menu de salida"></li>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
@@ -96,6 +96,21 @@
     </div>
 </footer>
 
+<script>
+
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('nav');
+    const exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+    });
+
+</script>
 
 </body>
 </html>

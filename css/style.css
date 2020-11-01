@@ -55,7 +55,7 @@ h1, .subhead {
 
 .blue-container {
     width: 100%;
-    background: #00C2FF;
+    background: #00E7DA;
     color: #fff;
     margin-top: 15%;
     padding: 4em 0 2em;
@@ -67,7 +67,7 @@ h1, .subhead {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: #00C2FF;
+    background-color:#00E7DA;
     position: absolute;
     top: -39px;
     right: 0px;
@@ -123,7 +123,7 @@ figure {
 
 figcaption {
     font-weight: bold;
-    color: #00C2FF;
+    color: #00E7DA;
 }
 
 h2 {
@@ -131,7 +131,7 @@ h2 {
 }
 
 .cta {
-    background:#00CC80;
+    background:#AFF98B;
     width: calc(100% - 1em);
     display: block;
     color: #fff;
@@ -379,6 +379,19 @@ nav ul li a:hover {
 
     .gray-container {
         padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 8%;
+        margin-top: -4px;
     }
 
 }
